@@ -38,7 +38,7 @@
   ```bash
   npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
-  npx husky add .husky/pre-commit "npm run lint-staged"
+  npx husky add .husky/pre-commit "npx lint-staged"
   ```
 
 - Add .editorconfig
