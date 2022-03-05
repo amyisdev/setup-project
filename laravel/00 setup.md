@@ -8,19 +8,19 @@
 
   ```bash
   rm package.json
-  yarn add -D prettier @prettier/plugin-php
+  npm i -D prettier @prettier/plugin-php
   ```
 
 - Add husky, commitlint & lint-staged
 
   ```bash
-  yarn add -D husky lint-staged @commitlint/{config-conventional,cli}
+  npm i -D husky lint-staged @commitlint/{config-conventional,cli}
   ```
 
 - Install husky
 
   ```bash
-  yarn husky install
+  npx husky install
   ```
 
 - Add to package.json
@@ -36,9 +36,9 @@
 - Add commitlint & lint-staged hooks (commitlint.config.js, .lintstagedrc.js)
 
   ```bash
-  yarn husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+  npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
-  yarn husky add .husky/pre-commit "yarn lint-staged"
+  npx husky add .husky/pre-commit "npm run lint-staged"
   ```
 
 - Add .editorconfig
