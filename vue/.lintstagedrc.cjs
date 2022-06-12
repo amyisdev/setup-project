@@ -1,4 +1,3 @@
 module.exports = {
-  '*.{js,jsx,ts,tsx}': 'eslint --cache --fix',
-  '*.{js,jsx,ts,tsx}': 'prettier --write',
+  '*.{js,jsx,ts,tsx,vue}': 'eslint --cache --fix --ignore-path .gitignore',
 };

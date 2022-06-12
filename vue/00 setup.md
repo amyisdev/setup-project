@@ -1,7 +1,7 @@
 - Init next.js
 
   ```bash
-  npm init vue@3
+  npm init vue@latest
   ```
 
 - Add husky, commitlint & lint-staged
