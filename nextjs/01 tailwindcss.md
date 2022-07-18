@@ -1,7 +1,7 @@
 - Add tailwindcss and stuff
 
   ```bash
-  npm i -D tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
+  npm i -D tailwindcss postcss autoprefixer
   ```
 
 - Init tailwindcss
