@@ -49,7 +49,6 @@
   ```json
   {
     "compilerOptions": {
-      "baseUrl": ".",
       "paths": {
         "@/*": ["./src/*"]
       }
