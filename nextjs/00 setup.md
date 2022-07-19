@@ -1,25 +1,25 @@
-- Init next.js
+- Init next.js using create-t3-app
 
   ```bash
-  npx create-next-app@latest --typescript
+  pnpm dlx create-t3-app
   ```
 
 - Add prettier (.prettierrc.json, .prettierignore, .eslintrc.json)
 
   ```bash
-  npm i -D eslint-config-prettier prettier
+  pnpm add -D eslint-config-prettier prettier
   ```
 
 - Add husky, commitlint & lint-staged
 
   ```bash
-  npm i -D husky lint-staged @commitlint/{config-conventional,cli}
+  pnpm add -D husky lint-staged @commitlint/{config-conventional,cli}
   ```
 
 - Install husky
 
   ```bash
-  npx husky install
+  pnpm husky install
   ```
 
 - Add to package.json
@@ -35,9 +35,9 @@
 - Add commitlint & lint-staged hooks (commitlint.config.js, .lintstagedrc.js)
 
   ```bash
-  npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+  pnpm husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
-  npx husky add .husky/pre-commit "npx lint-staged"
+  pnpm husky add .husky/pre-commit "npx lint-staged"
   ```
 
 - Add `.eslintcache` to .gitignore
