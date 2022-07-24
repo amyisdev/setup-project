@@ -7,7 +7,7 @@
 - Add prettier (.prettierrc.js, .prettierignore, .eslintrc.json)
 
   ```bash
-  pnpm add -D eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier-plugin-tailwindcss
+  pnpm add -D eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier-plugin-tailwindcss @trivago/prettier-plugin-sort-imports
   ```
 
 - Add husky, commitlint & lint-staged
