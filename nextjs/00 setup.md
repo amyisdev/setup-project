@@ -4,10 +4,10 @@
   pnpm dlx create-t3-app
   ```
 
-- Add prettier (.prettierrc.json, .prettierignore, .eslintrc.json)
+- Add prettier (.prettierrc.js, .prettierignore, .eslintrc.json)
 
   ```bash
-  pnpm add -D eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin
+  pnpm add -D eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier-plugin-tailwindcss
   ```
 
 - Add husky, commitlint & lint-staged
