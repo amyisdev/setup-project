@@ -44,14 +44,16 @@
 
 - Add .editorconfig
 
-- Add to tsconfig.json
+- Add to tsconfig.json and remove `next-auth.d.ts` from includes
 
   ```json
   {
     "compilerOptions": {
+      "baseUrl": ".",
       "paths": {
-        "@/*": ["./src/*"]
+        "@/*": ["src/*"]
       }
     }
   }
   ```
+- Move the next-auth.d.ts to src/types/ [or else](https://github.com/nextauthjs/next-auth/issues/4598)
