@@ -4,7 +4,7 @@
   pnpm dlx create-t3-app
   ```
 
-- Add prettier (.prettierrc.js, .prettierignore, .eslintrc.json)
+- Add prettier (.prettierrc.js, .prettierignore, .eslintrc.json, .prettier-plugins.js)
 
   ```bash
   pnpm add -D eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier-plugin-tailwindcss @trivago/prettier-plugin-sort-imports
