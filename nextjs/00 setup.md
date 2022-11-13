@@ -1,13 +1,13 @@
 - Init next.js using create-t3-app
 
   ```bash
-  pnpm dlx create-t3-app
+  pnpm create t3-app@latest
   ```
 
-- Add prettier (.prettierrc.js, .prettierignore, .eslintrc.json, .prettier-plugins.js)
+- Add prettier types & update prettier.config.cjs
 
   ```bash
-  pnpm add -D eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier-plugin-tailwindcss @trivago/prettier-plugin-sort-imports
+  pnpm add -D @types/prettier
   ```
 
 - Add husky, commitlint & lint-staged
@@ -43,17 +43,3 @@
 - Add `.eslintcache` to .gitignore
 
 - Add .editorconfig
-
-- Add to tsconfig.json and remove `next-auth.d.ts` from includes
-
-  ```json
-  {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["src/*"]
-      }
-    }
-  }
-  ```
-- Move the next-auth.d.ts to src/types/ [or else](https://github.com/nextauthjs/next-auth/issues/4598)
