@@ -3,13 +3,13 @@
   ```bash
   mkdir example
   cd example
-  npm init
+  pnpm init
   ```
 
 - Add typescript (tsconfig.json)
 
   ```bash
-  npm i -D typescript @tsconfig/node18 @types/node
+  pnpm i -D typescript @tsconfig/node20 @types/node
   ```
 
 - Update package.json
@@ -26,19 +26,19 @@
 - Add eslint & prettier (.eslintrc.cjs, .prettierrc.json)
 
   ```bash
-  npm i -D eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser
+  pnpm i -D eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser
   ```
 
 - Add husky, commitlint & lint-staged
 
   ```bash
-  npm i -D husky lint-staged @commitlint/{config-conventional,cli}
+  pnpm i -D husky lint-staged @commitlint/{config-conventional,cli}
   ```
 
 - Install husky
 
   ```bash
-  npx husky install
+  pnpm husky install
   ```
 
 - Update package.json
@@ -54,7 +54,7 @@
 - Add commitlint & lint-staged hooks (commitlint.config.cjs, .lintstagedrc.cjs)
 
   ```bash
-  npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+  pnpm husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
-  npx husky add .husky/pre-commit "npx lint-staged"
+  pnpm husky add .husky/pre-commit "npx lint-staged"
   ```

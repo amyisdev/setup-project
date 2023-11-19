@@ -1,7 +1,7 @@
 - Add vitest
 
   ```bash
-  npm i -D vitest c8
+  pnpm i -D vitest c8
   ```
 
 - Create vitest.config.ts
